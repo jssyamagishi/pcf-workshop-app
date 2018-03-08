@@ -3,16 +3,16 @@ resources:
   - name: pcfapp
     type: git
     source:
-      uri: <GIT_URI>
+      uri: https://github.com/jssyamagishi/pcf-workshop-app
       branch: master
     check_every: 10s
   - name: deploy-to-cf
     type: cf
     source:
       api: api.sys.pcflab.jp
-      username: <STUDENT_ID>
-      password: <YOUR_PASSWD>
-      organization: handson-<STUDENT_ID>
+      username: student-2
+      password: 5svkvd20e8
+      organization: handson-2
       space: development
       skip_cert_check: true
 jobs:
